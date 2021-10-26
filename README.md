@@ -15,3 +15,14 @@
       }
       return 0;
     }
+
+Pointless Box
+
+    int input;
+      cout << "Type number 1 or 2\n";
+      cin >> input;
+      while (input == 1) {
+        cout << "You have entered number 1" << endl;
+      }while (input == 2)
+        cout << "You have entered number 2" << endl;
+      return 0;
