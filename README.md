@@ -34,7 +34,7 @@ Pointless Box
           return 0;
       }
 
-asdf
+ would you like to quit
 
     char input;
       do {
