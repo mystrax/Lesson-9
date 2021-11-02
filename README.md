@@ -53,7 +53,7 @@ Pointless Box
           return 0;
       }
 
- would you like to quit
+ Would you like to quit
 
     char input;
       do {
@@ -62,7 +62,7 @@ Pointless Box
       } while ((input != 'Y') && (input != 'N'));	
       return 0;
 		
-brute force
+Brute force II
 
 	#include <iostream>
 	using namespace std;
@@ -87,14 +87,12 @@ brute force
 			else
 				x--;
 		}
-		//to print the ran out of message only if the password was not found within 5 attempts
-		if (x == 0)
 		{
 			cout << "You ran out of attempts" << endl;
 		}
 	}
 
-pointless box
+Pointless box
 
 	#include <iostream>
 	using namespace std;
@@ -122,7 +120,7 @@ pointless box
 
 	}
 	
-brute force I
+Brute Force I
 
 
 	#include <iostream>
@@ -142,4 +140,57 @@ brute force I
 		}
 		//to print the ran out of message only if the password was not found within 5 attempts
 		cout << "You found the code";
+	}
+
+Loopy
+
+	#include <iostream>  
+	using namespace std; 
+	int main() {
+
+		int myInt = 0, counter;
+		cout << "Enter a number\n";
+		cin >> counter;
+		do
+		{
+			cout << myInt << endl;
+			myInt++;
+
+		} while (myInt<=counter);
+
+	}
+
+Input Improvement Do While
+
+	#include <iostream>
+	using namespace std;
+	int main() {
+
+	char input; 
+	do
+	{
+		cout << "Would you like to Quit (Y/N)?" <<
+			endl;
+		cin >> input;
+	} 
+	while ((input != 'Y') && (input != 'y'));
+
+	return 0;
+	}
+
+Input Improvement While Loop
+
+	#include <iostream> 
+	using namespace std; 
+	int main() {
+
+	char input;  
+	do {
+		cout << "Would you like to Quit (Y/N)?" << endl;
+		cin >> input;
+
+	} 
+	while ((input != 'Y') && (input != 'y') );
+
+	return 0;
 	}
